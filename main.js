@@ -1,11 +1,4 @@
-### Código Inicial
-`viajes.js`
-``javascript
-// viajes.js
-
-// Array para guardar los destinos
-//var destinos = [];
-let destinos = [];
+const destinos = [];
 
 // Función para registrar un destino de viaje
 /*function registrarDestino(destino, fecha, transporte) {
@@ -19,6 +12,16 @@ let destinos = [];
 
     destinos.push(nuevoViaje);
 }*/
+
+const registrarDestino = (destino, fecha, transporte) => {
+    const nuevoViaje = {
+        destino,
+        fecha,
+        transporte,
+        costo: calcular costo (destino,transporte)
+    };
+    destinos.push(nuevoViaje);
+};
 
 
 // Función para calcular el costo del viaje
